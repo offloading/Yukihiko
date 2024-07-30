@@ -7,8 +7,8 @@ class Settings(BaseSettings):
     GITHUB_TOKEN: str = Field(..., env="GITHUB_TOKEN")
     GITHUB_REPOSITORY: str = Field(..., env="GITHUB_REPOSITORY")
     ISSUE_NUMBER: int = Field(0, env="ISSUE_NUMBER")
-    GEMINI_API_KEY: str = Field("", env="GEMINI_API_KEY")
-    # OPENAI_API_KEY: str = Field("", env="OPENAI_API_KEY")
+    # GEMINI_API_KEY: str = Field("", env="GEMINI_API_KEY")
+    OPENAI_API_KEY: str = Field("", env="OPENAI_API_KEY")
     # ANTHROPIC_API_KEY: str = Field("", env="ANTHROPIC_API_KEY")
     # REPOSITORY_SUMMARY_PATH: str = Field("", env="REPOSITORY_SUMMARY_PATH")
     

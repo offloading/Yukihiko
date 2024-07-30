@@ -26,7 +26,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         YOUR_PERSONAL_ACCESS_TOKEN_YUKIHIKO: ${{ secrets.YOUR_PERSONAL_ACCESS_TOKEN_YUKIHIKO }}
         ISSUE_NUMBER: ${{ github.event.issue.number || '0' }}
-        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       run: python .github/scripts/label_adder.py
 
 # ---------------

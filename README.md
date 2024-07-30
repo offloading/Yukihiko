@@ -78,10 +78,9 @@ git clone https://github.com/Sunwood-ai-labs/Yukihiko.git
 
 Yukihikoはいくつかの外部サービスと連携して動作します。これらのサービスを利用するためのAPIキーやトークンをGitHub Secretsに設定する必要があります。
 
-* **GITHUB_TOKEN**: GitHub APIを利用するためのトークン。Yukihikoを実行するリポジトリへのアクセス権が必要です。
-* **GEMINI_API_KEY**: Google Gemini APIを利用するためのAPIキー。
+~~* **GEMINI_API_KEY**: Google Gemini APIを利用するためのAPIキー。~~
 * **YOUR_PERSONAL_ACCESS_TOKEN**: GitHub APIを利用するための、個人のアクセストークン。Yukihikoを実行するリポジトリへのアクセス権が必要です。
-* **YOUR_PERSONAL_ACCESS_TOKEN_YUKIHIKO**: Yukihiko専用のGitHub Personal Access Token。Yukihikoを実行するリポジトリへのアクセス権が必要です。
+* **OPENAI_API_KEY**: OpenAI APIを利用するためのAPIキー
 
 ### 3. ワークフローを配置 ▶️
 
@@ -89,7 +88,7 @@ Yukihikoはいくつかの外部サービスと連携して動作します。こ
 
 ### 4. 定期実行を待つ 😊
 
-設定したスケジュールに従ってYukihikoが動作し、論文情報を収集してIssueとして報告します。 
+設定したスケジュールに従ってYukihikoが動作し、論文情報を収集してIssueとして報告します。
 
 ## Yukihikoの動作原理 ⚙️
 
