@@ -1,5 +1,47 @@
 [
   {
+    "title": "Integrating Large Language Models into a Tri-Modal Architecture for Automated Depression Classification",
+    "summary": "Major Depressive Disorder (MDD) is a pervasive mental health condition that affects 300 million people worldwide. This work presents a novel, BiLSTM-based tri-modal model-level fusion architecture for the binary classification of depression from clinical interview recordings. The proposed architecture incorporates Mel Frequency Cepstral Coefficients, Facial Action Units, and uses a two-shot learning based GPT-4 model to process text data. This is the first work to incorporate large language models into a multi-modal architecture for this task. It achieves impressive results on the DAIC-WOZ AVEC 2016 Challenge cross-validation split and Leave-One-Subject-Out cross-validation split, surpassing all baseline models and multiple state-of-the-art models. In Leave-One-Subject-Out testing, it achieves an accuracy of 91.01%, an F1-Score of 85.95%, a precision of 80%, and a recall of 92.86%.",
+    "link": "https://arxiv.org/abs/2407.19340",
+    "published": "Tue, 30 Jul 2024 19:35:23 GMT",
+    "authors": "Santosh V. Patapati",
+    "github_urls": [],
+    "huggingface_urls": [],
+    "source": "Hugging Face"
+  },
+  {
+    "title": "ImagiNet: A Multi-Content Dataset for Generalizable Synthetic Image Detection via Contrastive Learning",
+    "summary": "Generative models, such as diffusion models (DMs), variational autoencoders (VAEs), and generative adversarial networks (GANs), produce images with a level of authenticity that makes them nearly indistinguishable from real photos and artwork. While this capability is beneficial for many industries, the difficulty of identifying synthetic images leaves online media platforms vulnerable to impersonation and misinformation attempts. To support the development of defensive methods, we introduce ImagiNet, a high-resolution and balanced dataset for synthetic image detection, designed to mitigate potential biases in existing resources. It contains 200K examples, spanning four content categories: photos, paintings, faces, and uncategorized. Synthetic images are produced with open-source and proprietary generators, whereas real counterparts of the same content type are collected from public datasets. The structure of ImagiNet allows for a two-track evaluation system: i) classification as real or synthetic and ii) identification of the generative model. To establish a baseline, we train a ResNet-50 model using a self-supervised contrastive objective (SelfCon) for each track. The model demonstrates state-of-the-art performance and high inference speed across established benchmarks, achieving an AUC of up to 0.99 and balanced accuracy ranging from 86% to 95%, even under social network conditions that involve compression and resizing. Our data and code are available at https://github.com/delyan-boychev/imaginet.",
+    "link": "https://arxiv.org/abs/2407.20020",
+    "published": "Tue, 30 Jul 2024 15:10:13 GMT",
+    "authors": "Delyan Boychev, Radostin Cholakov",
+    "github_urls": [
+      "https://github.com/delyan-boychev/imaginet."
+    ],
+    "huggingface_urls": [],
+    "source": "Hugging Face"
+  },
+  {
+    "title": "Meta-Rewarding Language Models: Self-Improving Alignment with LLM-as-a-Meta-Judge",
+    "summary": "Large Language Models (LLMs) are rapidly surpassing human knowledge in many domains. While improving these models traditionally relies on costly human data, recent self-rewarding mechanisms (Yuan et al., 2024) have shown that LLMs can improve by judging their own responses instead of relying on human labelers. However, existing methods have primarily focused on improving model responses rather than judgment capabilities, resulting in rapid saturation during iterative training. To address this issue, we introduce a novel Meta-Rewarding step to the self-improvement process, where the model judges its own judgements and uses that feedback to refine its judgment skills. Surprisingly, this unsupervised approach improves the model's ability to judge {\\em and} follow instructions, as demonstrated by a win rate improvement of Llama-3-8B-Instruct from 22.9% to 39.4% on AlpacaEval 2, and 20.6% to 29.1% on Arena-Hard. These results strongly suggest the potential for self-improving models without human supervision.",
+    "link": "https://arxiv.org/abs/2407.19594",
+    "published": "Tue, 30 Jul 2024 14:32:56 GMT",
+    "authors": "Tianhao Wu, Weizhe Yuan, Olga Golovneva, Jing Xu, Yuandong Tian, Jiantao Jiao, Jason Weston, Sainbayar Sukhbaatar",
+    "github_urls": [],
+    "huggingface_urls": [],
+    "source": "Hugging Face"
+  },
+  {
+    "title": "TAPTRv2: Attention-based Position Update Improves Tracking Any Point",
+    "summary": "In this paper, we present TAPTRv2, a Transformer-based approach built upon TAPTR for solving the Tracking Any Point (TAP) task. TAPTR borrows designs from DEtection TRansformer (DETR) and formulates each tracking point as a point query, making it possible to leverage well-studied operations in DETR-like algorithms. TAPTRv2 improves TAPTR by addressing a critical issue regarding its reliance on cost-volume,which contaminates the point query\\'s content feature and negatively impacts both visibility prediction and cost-volume computation. In TAPTRv2, we propose a novel attention-based position update (APU) operation and use key-aware deformable attention to realize. For each query, this operation uses key-aware attention weights to combine their corresponding deformable sampling positions to predict a new query position. This design is based on the observation that local attention is essentially the same as cost-volume, both of which are computed by dot-production between a query and its surrounding features. By introducing this new operation, TAPTRv2 not only removes the extra burden of cost-volume computation, but also leads to a substantial performance improvement. TAPTRv2 surpasses TAPTR and achieves state-of-the-art performance on many challenging datasets, demonstrating the superiority",
+    "link": "https://arxiv.org/abs/2407.16291",
+    "published": "Tue, 30 Jul 2024 13:38:11 GMT",
+    "authors": "Hongyang Li, Hao Zhang, Shilong Liu, Zhaoyang Zeng, Feng Li, Tianhe Ren, Bohan Li, Lei Zhang",
+    "github_urls": [],
+    "huggingface_urls": [],
+    "source": "Hugging Face"
+  },
+  {
     "title": "SeaLLMs 3: Open Foundation and Chat Multilingual Large Language Models for Southeast Asian Languages",
     "summary": "Large Language Models (LLMs) have shown remarkable abilities across various tasks, yet their development has predominantly centered on high-resource languages like English and Chinese, leaving low-resource languages underserved. To address this disparity, we present SeaLLMs 3, the latest iteration of the SeaLLMs model family, tailored for Southeast Asian languages. This region, characterized by its rich linguistic diversity, has lacked adequate language technology support. SeaLLMs 3 aims to bridge this gap by covering a comprehensive range of languages spoken in this region, including English, Chinese, Indonesian, Vietnamese, Thai, Tagalog, Malay, Burmese, Khmer, Lao, Tamil, and Javanese. Leveraging efficient language enhancement techniques and a specially constructed instruction tuning dataset, SeaLLMs 3 significantly reduces training costs while maintaining high performance and versatility. Our model excels in tasks such as world knowledge, mathematical reasoning, translation, and instruction following, achieving state-of-the-art performance among similarly sized models. Additionally, we prioritized safety and reliability by addressing both general and culture-specific considerations and incorporated mechanisms to reduce hallucinations. This work underscores the importance of inclusive AI, showing that advanced LLM capabilities can benefit underserved linguistic and cultural communities.",
     "link": "https://arxiv.org/abs/2407.19672",
