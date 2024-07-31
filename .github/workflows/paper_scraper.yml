@@ -2,7 +2,7 @@ name: 論文スクレイパーの実行
 
 on:
   schedule:
-    - cron: '59 * * * *'
+    - cron: "31 * * * *"
   workflow_dispatch:  # 手動実行のオプション
 
 permissions:
