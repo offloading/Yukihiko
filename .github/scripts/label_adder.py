@@ -16,7 +16,7 @@ class LabelAdder:
         self.llm_service = LLMService()
         self.github_service = GitHubService()
         self.existing_labels = self.load_labels_from_github()
-        self.user_name = "@yukihiko-fuyuki"
+        self.user_name = "@offloading"
     def load_labels_from_github(self):
         return self.github_service.get_labels()
 

@@ -53,7 +53,7 @@ class IssueResponder:
         comments = self.github_service.get_comments(issue)
 
         # 自分以外のコメントがあれば応答を生成
-        if comments and comments[-1].user.login != "yukihiko-fuyuki":
+        if comments and comments[-1].user.login != "offloading":
             logger.info(f"#{issue.number} {issue.title} の最後のコメントに雪彦として返信します。")
             response = self.generate_response(issue.title, issue.body, comments)
             self.github_service.add_comment(issue, response)
