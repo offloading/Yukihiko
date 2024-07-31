@@ -12,7 +12,7 @@ class GitHubService:
         self.settings = get_settings()
         # self.g = Github(self.settings.GITHUB_TOKEN)
         # self.g = Github(self.settings.YOUR_PERSONAL_ACCESS_TOKEN)
-        self.g = Github(self.settings.YOUR_PERSONAL_ACCESS_TOKEN_YUKIHIKO)
+        self.g = Github(self.settings.YOUR_PERSONAL_ACCESS_TOKEN)
         
         self.repo = self.g.get_repo(self.settings.GITHUB_REPOSITORY)
         logger.debug(f"Using token: {self.settings.YOUR_PERSONAL_ACCESS_TOKEN[:5]}...")

@@ -59,7 +59,7 @@ jobs:
       - name: プルリクエストの自動マージ
         if: steps.check_changes.outputs.changes == 'true'
         env:
-          GITHUB_TOKEN: ${{ secrets.YOUR_PERSONAL_ACCESS_TOKEN_YUKIHIKO }}
+          GITHUB_TOKEN: ${{ secrets.YOUR_PERSONAL_ACCESS_TOKEN }}
         run: |
           if [ -n "$PR_URL" ]; then
             pr_number=$(echo $PR_URL | awk -F'/' '{print $NF}')

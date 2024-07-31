@@ -24,7 +24,7 @@ jobs:
     - name: Label issue
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        YOUR_PERSONAL_ACCESS_TOKEN_YUKIHIKO: ${{ secrets.YOUR_PERSONAL_ACCESS_TOKEN }}
+        YOUR_PERSONAL_ACCESS_TOKEN: ${{ secrets.YOUR_PERSONAL_ACCESS_TOKEN }}
         ISSUE_NUMBER: ${{ github.event.issue.number || '0' }}
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       run: python .github/scripts/label_adder.py
