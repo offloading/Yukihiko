@@ -3,7 +3,7 @@ from pydantic import Field
 from functools import lru_cache
 
 class Settings(BaseSettings):
-    LITELLM_MODEL: str = "gemini/gemini-1.5-pro-latest"
+    LITELLM_MODEL: str = "gpt-3.5-turbo"
     GITHUB_TOKEN: str = Field(..., env="GITHUB_TOKEN")
     GITHUB_REPOSITORY: str = Field(..., env="GITHUB_REPOSITORY")
     ISSUE_NUMBER: int = Field(0, env="ISSUE_NUMBER")
