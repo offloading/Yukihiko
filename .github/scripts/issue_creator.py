@@ -17,7 +17,7 @@ class IssueCreator:
     def __init__(self, papers_path='./papers.json'):
         self.papers_path = papers_path
         # self.g = Github(os.environ['GITHUB_TOKEN'])
-        self.g = Github(os.environ['YOUR_PERSONAL_ACCESS_TOKEN_YUKIHIKO'])
+        self.g = Github(os.environ['YOUR_PERSONAL_ACCESS_TOKEN'])
         self.repo = self.g.get_repo(os.environ['GITHUB_REPOSITORY'])
         self.llm_service = LLMService()
 

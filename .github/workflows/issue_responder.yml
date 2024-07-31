@@ -29,6 +29,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          YOUR_PERSONAL_ACCESS_TOKEN_YUKIHIKO: ${{ secrets.YOUR_PERSONAL_ACCESS_TOKEN_YUKIHIKO }}
+          YOUR_PERSONAL_ACCESS_TOKEN_YUKIHIKO: ${{ secrets.YOUR_PERSONAL_ACCESS_TOKEN }}
           ISSUE_NUMBER: ${{ github.event.issue.number || '0' }}
         run: python .github/scripts/issue_responder.py
