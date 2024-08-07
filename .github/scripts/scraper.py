@@ -29,7 +29,7 @@ class PaperScraper:
 
     def scrape_arxiv(self):
         logger.info("arXivからの論文スクレイピングを開始します")
-        url = 'http://export.arxiv.org/rss/cs.CV'
+        url = 'http://export.arxiv.org/rss/cs'
         feed = feedparser.parse(url)
 
         papers = []

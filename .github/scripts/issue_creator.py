@@ -21,7 +21,7 @@ class IssueCreator:
         self.repo = self.g.get_repo(os.environ['GITHUB_REPOSITORY'])
         self.llm_service = LLMService()
 
-    def translate_text(self, text: str, target_language: str = "日本語", max_retries: int = 5) -> Optional[str]:
+    def translate_text(self, text: str, target_language: str = "日本語", max_retries: int = 50) -> Optional[str]:
         logger.info(f"テキストを{target_language}に翻訳中...")
         prompt = f"""
 以下のテキストを自然な{target_language}に翻訳してください。翻訳結果のみをください：
