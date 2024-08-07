@@ -1,220 +1,148 @@
 [
   {
-    "title": "Integrating Large Language Models into a Tri-Modal Architecture for Automated Depression Classification",
-    "summary": "Major Depressive Disorder (MDD) is a pervasive mental health condition that affects 300 million people worldwide. This work presents a novel, BiLSTM-based tri-modal model-level fusion architecture for the binary classification of depression from clinical interview recordings. The proposed architecture incorporates Mel Frequency Cepstral Coefficients, Facial Action Units, and uses a two-shot learning based GPT-4 model to process text data. This is the first work to incorporate large language models into a multi-modal architecture for this task. It achieves impressive results on the DAIC-WOZ AVEC 2016 Challenge cross-validation split and Leave-One-Subject-Out cross-validation split, surpassing all baseline models and multiple state-of-the-art models. In Leave-One-Subject-Out testing, it achieves an accuracy of 91.01%, an F1-Score of 85.95%, a precision of 80%, and a recall of 92.86%.",
-    "link": "https://arxiv.org/abs/2407.19340",
-    "published": "Tue, 30 Jul 2024 19:35:23 GMT",
-    "authors": "Santosh V. Patapati",
+    "title": "BioMamba: A Pre-trained Biomedical Language Representation Model Leveraging Mamba",
+    "summary": "The advancement of natural language processing (NLP) in biology hinges on models' ability to interpret intricate biomedical literature. Traditional models often struggle with the complex and domain-specific language in this field. In this paper, we present BioMamba, a pre-trained model specifically designed for biomedical text mining. BioMamba builds upon the Mamba architecture and is pre-trained on an extensive corpus of biomedical literature. Our empirical studies demonstrate that BioMamba significantly outperforms models like BioBERT and general-domain Mamba across various biomedical tasks. For instance, BioMamba achieves a 100 times reduction in perplexity and a 4 times reduction in cross-entropy loss on the BioASQ test set. We provide an overview of the model architecture, pre-training process, and fine-tuning techniques. Additionally, we release the code and trained model to facilitate further research.",
+    "link": "https://arxiv.org/abs/2408.02600",
+    "published": "Tue, 06 Aug 2024 08:32:25 GMT",
+    "authors": "Ling Yue, Sixue Xing, Yingzhou Lu, Tianfan Fu",
     "github_urls": [],
     "huggingface_urls": [],
     "source": "Hugging Face"
   },
   {
-    "title": "ImagiNet: A Multi-Content Dataset for Generalizable Synthetic Image Detection via Contrastive Learning",
-    "summary": "Generative models, such as diffusion models (DMs), variational autoencoders (VAEs), and generative adversarial networks (GANs), produce images with a level of authenticity that makes them nearly indistinguishable from real photos and artwork. While this capability is beneficial for many industries, the difficulty of identifying synthetic images leaves online media platforms vulnerable to impersonation and misinformation attempts. To support the development of defensive methods, we introduce ImagiNet, a high-resolution and balanced dataset for synthetic image detection, designed to mitigate potential biases in existing resources. It contains 200K examples, spanning four content categories: photos, paintings, faces, and uncategorized. Synthetic images are produced with open-source and proprietary generators, whereas real counterparts of the same content type are collected from public datasets. The structure of ImagiNet allows for a two-track evaluation system: i) classification as real or synthetic and ii) identification of the generative model. To establish a baseline, we train a ResNet-50 model using a self-supervised contrastive objective (SelfCon) for each track. The model demonstrates state-of-the-art performance and high inference speed across established benchmarks, achieving an AUC of up to 0.99 and balanced accuracy ranging from 86% to 95%, even under social network conditions that involve compression and resizing. Our data and code are available at https://github.com/delyan-boychev/imaginet.",
-    "link": "https://arxiv.org/abs/2407.20020",
-    "published": "Tue, 30 Jul 2024 15:10:13 GMT",
-    "authors": "Delyan Boychev, Radostin Cholakov",
+    "title": "RAG Foundry: A Framework for Enhancing LLMs for Retrieval Augmented Generation",
+    "summary": "Implementing Retrieval-Augmented Generation (RAG) systems is inherently complex, requiring deep understanding of data, use cases, and intricate design decisions. Additionally, evaluating these systems presents significant challenges, necessitating assessment of both retrieval accuracy and generative quality through a multi-faceted approach. We introduce RAG Foundry, an open-source framework for augmenting large language models for RAG use cases. RAG Foundry integrates data creation, training, inference and evaluation into a single workflow, facilitating the creation of data-augmented datasets for training and evaluating large language models in RAG settings. This integration enables rapid prototyping and experimentation with various RAG techniques, allowing users to easily generate datasets and train RAG models using internal or specialized knowledge sources. We demonstrate the framework effectiveness by augmenting and fine-tuning Llama-3 and Phi-3 models with diverse RAG configurations, showcasing consistent improvements across three knowledge-intensive datasets. Code is released as open-source in https://github.com/IntelLabs/RAGFoundry.",
+    "link": "https://arxiv.org/abs/2408.02545",
+    "published": "Tue, 06 Aug 2024 08:28:52 GMT",
+    "authors": "Daniel Fleischer, Moshe Berchansky, Moshe Wasserblat, Peter Izsak",
     "github_urls": [
-      "https://github.com/delyan-boychev/imaginet."
+      "https://github.com/IntelLabs/RAGFoundry."
     ],
     "huggingface_urls": [],
     "source": "Hugging Face"
   },
   {
-    "title": "Meta-Rewarding Language Models: Self-Improving Alignment with LLM-as-a-Meta-Judge",
-    "summary": "Large Language Models (LLMs) are rapidly surpassing human knowledge in many domains. While improving these models traditionally relies on costly human data, recent self-rewarding mechanisms (Yuan et al., 2024) have shown that LLMs can improve by judging their own responses instead of relying on human labelers. However, existing methods have primarily focused on improving model responses rather than judgment capabilities, resulting in rapid saturation during iterative training. To address this issue, we introduce a novel Meta-Rewarding step to the self-improvement process, where the model judges its own judgements and uses that feedback to refine its judgment skills. Surprisingly, this unsupervised approach improves the model's ability to judge {\\em and} follow instructions, as demonstrated by a win rate improvement of Llama-3-8B-Instruct from 22.9% to 39.4% on AlpacaEval 2, and 20.6% to 29.1% on Arena-Hard. These results strongly suggest the potential for self-improving models without human supervision.",
-    "link": "https://arxiv.org/abs/2407.19594",
-    "published": "Tue, 30 Jul 2024 14:32:56 GMT",
-    "authors": "Tianhao Wu, Weizhe Yuan, Olga Golovneva, Jing Xu, Yuandong Tian, Jiantao Jiao, Jason Weston, Sainbayar Sukhbaatar",
+    "title": "Operationalizing Contextual Integrity in Privacy-Conscious Assistants",
+    "summary": "Advanced AI assistants combine frontier LLMs and tool access to autonomously perform complex tasks on behalf of users. While the helpfulness of such assistants can increase dramatically with access to user information including emails and documents, this raises privacy concerns about assistants sharing inappropriate information with third parties without user supervision. To steer information-sharing assistants to behave in accordance with privacy expectations, we propose to operationalize contextual integrity (CI), a framework that equates privacy with the appropriate flow of information in a given context. In particular, we design and evaluate a number of strategies to steer assistants' information-sharing actions to be CI compliant. Our evaluation is based on a novel form filling benchmark composed of synthetic data and human annotations, and it reveals that prompting frontier LLMs to perform CI-based reasoning yields strong results.",
+    "link": "https://arxiv.org/abs/2408.02373",
+    "published": "Tue, 06 Aug 2024 07:24:29 GMT",
+    "authors": "Sahra Ghalebikesabi, Eugene Bagdasaryan, Ren Yi, Itay Yona, Ilia Shumailov, Aneesh Pappu, Chongyang Shi, Laura Weidinger, Robert Stanforth, Leonard Berrada, Pushmeet Kohli, Po-Sen Huang, Borja Balle",
     "github_urls": [],
     "huggingface_urls": [],
     "source": "Hugging Face"
   },
   {
-    "title": "TAPTRv2: Attention-based Position Update Improves Tracking Any Point",
-    "summary": "In this paper, we present TAPTRv2, a Transformer-based approach built upon TAPTR for solving the Tracking Any Point (TAP) task. TAPTR borrows designs from DEtection TRansformer (DETR) and formulates each tracking point as a point query, making it possible to leverage well-studied operations in DETR-like algorithms. TAPTRv2 improves TAPTR by addressing a critical issue regarding its reliance on cost-volume,which contaminates the point query\\'s content feature and negatively impacts both visibility prediction and cost-volume computation. In TAPTRv2, we propose a novel attention-based position update (APU) operation and use key-aware deformable attention to realize. For each query, this operation uses key-aware attention weights to combine their corresponding deformable sampling positions to predict a new query position. This design is based on the observation that local attention is essentially the same as cost-volume, both of which are computed by dot-production between a query and its surrounding features. By introducing this new operation, TAPTRv2 not only removes the extra burden of cost-volume computation, but also leads to a substantial performance improvement. TAPTRv2 surpasses TAPTR and achieves state-of-the-art performance on many challenging datasets, demonstrating the superiority",
-    "link": "https://arxiv.org/abs/2407.16291",
-    "published": "Tue, 30 Jul 2024 13:38:11 GMT",
-    "authors": "Hongyang Li, Hao Zhang, Shilong Liu, Zhaoyang Zeng, Feng Li, Tianhe Ren, Bohan Li, Lei Zhang",
+    "title": "ExoViP: Step-by-step Verification and Exploration with Exoskeleton Modules for Compositional Visual Reasoning",
+    "summary": "Compositional visual reasoning methods, which translate a complex query into a structured composition of feasible visual tasks, have exhibited a strong potential in complicated multi-modal tasks. Empowered by recent advances in large language models (LLMs), this multi-modal challenge has been brought to a new stage by treating LLMs as few-shot/zero-shot planners, i.e., vision-language (VL) programming. Such methods, despite their numerous merits, suffer from challenges due to LLM planning mistakes or inaccuracy of visual execution modules, lagging behind the non-compositional models. In this work, we devise a \"plug-and-play\" method, ExoViP, to correct errors in both the planning and execution stages through introspective verification. We employ verification modules as \"exoskeletons\" to enhance current VL programming schemes. Specifically, our proposed verification module utilizes a mixture of three sub-verifiers to validate predictions after each reasoning step, subsequently calibrating the visual module predictions and refining the reasoning trace planned by LLMs. Experimental results on two representative VL programming methods showcase consistent improvements on five compositional reasoning tasks on standard benchmarks. In light of this, we believe that ExoViP can foster better performance and generalization on open-domain multi-modal challenges.",
+    "link": "https://arxiv.org/abs/2408.02210",
+    "published": "Tue, 06 Aug 2024 06:09:09 GMT",
+    "authors": "Yuxuan Wang, Alan Yuille, Zhuowan Li, Zilong Zheng",
     "github_urls": [],
     "huggingface_urls": [],
     "source": "Hugging Face"
   },
   {
-    "title": "SeaLLMs 3: Open Foundation and Chat Multilingual Large Language Models for Southeast Asian Languages",
-    "summary": "Large Language Models (LLMs) have shown remarkable abilities across various tasks, yet their development has predominantly centered on high-resource languages like English and Chinese, leaving low-resource languages underserved. To address this disparity, we present SeaLLMs 3, the latest iteration of the SeaLLMs model family, tailored for Southeast Asian languages. This region, characterized by its rich linguistic diversity, has lacked adequate language technology support. SeaLLMs 3 aims to bridge this gap by covering a comprehensive range of languages spoken in this region, including English, Chinese, Indonesian, Vietnamese, Thai, Tagalog, Malay, Burmese, Khmer, Lao, Tamil, and Javanese. Leveraging efficient language enhancement techniques and a specially constructed instruction tuning dataset, SeaLLMs 3 significantly reduces training costs while maintaining high performance and versatility. Our model excels in tasks such as world knowledge, mathematical reasoning, translation, and instruction following, achieving state-of-the-art performance among similarly sized models. Additionally, we prioritized safety and reliability by addressing both general and culture-specific considerations and incorporated mechanisms to reduce hallucinations. This work underscores the importance of inclusive AI, showing that advanced LLM capabilities can benefit underserved linguistic and cultural communities.",
-    "link": "https://arxiv.org/abs/2407.19672",
-    "published": "Tue, 30 Jul 2024 02:51:11 GMT",
-    "authors": "Wenxuan Zhang, Hou Pong Chan, Yiran Zhao, Mahani Aljunied, Jianyu Wang, Chaoqun Liu, Yue Deng, Zhiqiang Hu, Weiwen Xu, Yew Ken Chia, Xin Li, Lidong Bing",
+    "title": "The Impact of Hyperparameters on Large Language Model Inference Performance: An Evaluation of vLLM and HuggingFace Pipelines",
+    "summary": "The recent surge of open-source large language models (LLMs) enables developers to create AI-based solutions while maintaining control over aspects such as privacy and compliance, thereby providing governance and ownership of the model deployment process. To utilize these LLMs, inference engines are needed. These engines load the model's weights onto available resources, such as GPUs, and process queries to generate responses. The speed of inference, or performance, of the LLM, is critical for real-time applications, as it computes millions or billions of floating point operations per inference. Recently, advanced inference engines such as vLLM have emerged, incorporating novel mechanisms such as efficient memory management to achieve state-of-the-art performance. In this paper, we analyze the performance, particularly the throughput (tokens generated per unit of time), of 20 LLMs using two inference libraries: vLLM and HuggingFace's pipelines. We investigate how various hyperparameters, which developers must configure, influence inference performance. Our results reveal that throughput landscapes are irregular, with distinct peaks, highlighting the importance of hyperparameter optimization to achieve maximum performance. We also show that applying hyperparameter optimization when upgrading or downgrading the GPU model used for inference can improve throughput from HuggingFace pipelines by an average of 9.16% and 13.7%, respectively.",
+    "link": "https://arxiv.org/abs/2408.01050",
+    "published": "Tue, 06 Aug 2024 06:09:04 GMT",
+    "authors": "Matias Martinez",
     "github_urls": [],
     "huggingface_urls": [],
     "source": "Hugging Face"
   },
   {
-    "title": "ATHAR: A High-Quality and Diverse Dataset for Classical Arabic to English Translation",
-    "summary": "Classical Arabic represents a significant era, encompassing the golden age of Arab culture, philosophy, and scientific literature. With a broad consensus on the importance of translating these literatures to enrich knowledge dissemination across communities, the advent of large language models (LLMs) and translation systems offers promising tools to facilitate this goal. However, we have identified a scarcity of translation datasets in Classical Arabic, which are often limited in scope and topics, hindering the development of high-quality translation systems. In response, we present the ATHAR dataset, comprising 66,000 high-quality Classical Arabic to English translation samples that cover a wide array of subjects including science, culture, and philosophy. Furthermore, we assess the performance of current state-of-the-art LLMs under various settings, concluding that there is a need for such datasets in current systems. Our findings highlight how models can benefit from fine-tuning or incorporating this dataset into their pretraining pipelines. The dataset is publicly available on the HuggingFace Data Hub at https://huggingface.co/datasets/mohamed-khalil/ATHAR.",
-    "link": "https://arxiv.org/abs/2407.19835",
-    "published": "Tue, 30 Jul 2024 02:40:42 GMT",
-    "authors": "Mohammed Khalil, Mohammed Sabry",
-    "github_urls": [],
-    "huggingface_urls": [
-      "https://huggingface.co/datasets/mohamed-khalil/ATHAR."
-    ],
-    "source": "Hugging Face"
-  },
-  {
-    "title": "Sentiment Analysis of Lithuanian Online Reviews Using Large Language Models",
-    "summary": "Sentiment analysis is a widely researched area within Natural Language Processing (NLP), attracting significant interest due to the advent of automated solutions. Despite this, the task remains challenging because of the inherent complexity of languages and the subjective nature of sentiments. It is even more challenging for less-studied and less-resourced languages such as Lithuanian. Our review of existing Lithuanian NLP research reveals that traditional machine learning methods and classification algorithms have limited effectiveness for the task. In this work, we address sentiment analysis of Lithuanian five-star-based online reviews from multiple domains that we collect and clean. We apply transformer models to this task for the first time, exploring the capabilities of pre-trained multilingual Large Language Models (LLMs), specifically focusing on fine-tuning BERT and T5 models. Given the inherent difficulty of the task, the fine-tuned models perform quite well, especially when the sentiments themselves are less ambiguous: 80.74% and 89.61% testing recognition accuracy of the most popular one- and five-star reviews respectively. They significantly outperform current commercial state-of-the-art general-purpose LLM GPT-4. We openly share our fine-tuned LLMs online.",
-    "link": "https://arxiv.org/abs/2407.19914",
-    "published": "Tue, 30 Jul 2024 02:36:51 GMT",
-    "authors": "Brigita Vileikytė, Mantas Lukoševičius, Lukas Stankevičius",
-    "github_urls": [],
-    "huggingface_urls": [],
-    "source": "Hugging Face"
-  },
-  {
-    "title": "Mixture of Nested Experts: Adaptive Processing of Visual Tokens",
-    "summary": "The visual medium (images and videos) naturally contains a large amount of information redundancy, thereby providing a great opportunity for leveraging efficiency in processing. While Vision Transformer (ViT) based models scale effectively to large data regimes, they fail to capitalize on this inherent redundancy, leading to higher computational costs. Mixture of Experts (MoE) networks demonstrate scalability while maintaining same inference-time costs, but they come with a larger parameter footprint. We present Mixture of Nested Experts (MoNE), which utilizes a nested structure for experts, wherein individual experts fall on an increasing compute-accuracy curve. Given a compute budget, MoNE learns to dynamically choose tokens in a priority order, and thus redundant tokens are processed through cheaper nested experts. Using this framework, we achieve equivalent performance as the baseline models, while reducing inference time compute by over two-fold. We validate our approach on standard image and video datasets - ImageNet-21K, Kinetics400, and Something-Something-v2. We further highlight MoNE's adaptability by showcasing its ability to maintain strong performance across different inference-time compute budgets on videos, using only a single trained model.",
-    "link": "https://arxiv.org/abs/2407.19985",
-    "published": "Tue, 30 Jul 2024 02:09:00 GMT",
-    "authors": "Gagan Jain, Nidhi Hegde, Aditya Kusupati, Arsha Nagrani, Shyamal Buch, Prateek Jain, Anurag Arnab, Sujoy Paul",
-    "github_urls": [],
-    "huggingface_urls": [],
-    "source": "Hugging Face"
-  },
-  {
-    "title": "MindSearch: Mimicking Human Minds Elicits Deep AI Searcher",
-    "summary": "Information seeking and integration is a complex cognitive task that consumes enormous time and effort. Inspired by the remarkable progress of Large Language Models, recent works attempt to solve this task by combining LLMs and search engines. However, these methods still obtain unsatisfying performance due to three challenges: (1) complex requests often cannot be accurately and completely retrieved by the search engine once (2) corresponding information to be integrated is spread over multiple web pages along with massive noise, and (3) a large number of web pages with long contents may quickly exceed the maximum context length of LLMs. Inspired by the cognitive process when humans solve these problems, we introduce MindSearch to mimic the human minds in web information seeking and integration, which can be instantiated by a simple yet effective LLM-based multi-agent framework. The WebPlanner models the human mind of multi-step information seeking as a dynamic graph construction process: it decomposes the user query into atomic sub-questions as nodes in the graph and progressively extends the graph based on the search result from WebSearcher. Tasked with each sub-question, WebSearcher performs hierarchical information retrieval with search engines and collects valuable information for WebPlanner. The multi-agent design of MindSearch enables the whole framework to seek and integrate information parallelly from larger-scale (e.g., more than 300) web pages in 3 minutes, which is worth 3 hours of human effort. MindSearch demonstrates significant improvement in the response quality in terms of depth and breadth, on both close-set and open-set QA problems. Besides, responses from MindSearch based on InternLM2.5-7B are preferable by humans to ChatGPT-Web and Perplexity.ai applications, which implies that MindSearch can already deliver a competitive solution to the proprietary AI search engine.",
-    "link": "https://arxiv.org/abs/2407.20183",
-    "published": "Tue, 30 Jul 2024 02:04:20 GMT",
-    "authors": "Zehui Chen, Kuikun Liu, Qiuchen Wang, Jiangning Liu, Wenwei Zhang, Kai Chen, Feng Zhao",
-    "github_urls": [],
-    "huggingface_urls": [],
-    "source": "Hugging Face"
-  },
-  {
-    "title": "Diffusion Feedback Helps CLIP See Better",
-    "summary": "Contrastive Language-Image Pre-training (CLIP), which excels at abstracting open-world representations across domains and modalities, has become a foundation for a variety of vision and multimodal tasks. However, recent studies reveal that CLIP has severe visual shortcomings, such as which can hardly distinguish orientation, quantity, color, structure, etc. These visual shortcomings also limit the perception capabilities of multimodal large language models (MLLMs) built on CLIP. The main reason could be that the image-text pairs used to train CLIP are inherently biased, due to the lack of the distinctiveness of the text and the diversity of images. In this work, we present a simple post-training approach for CLIP models, which largely overcomes its visual shortcomings via a self-supervised diffusion process. We introduce DIVA, which uses the DIffusion model as a Visual Assistant for CLIP. Specifically, DIVA leverages generative feedback from text-to-image diffusion models to optimize CLIP representations, with only images (without corresponding text). We demonstrate that DIVA improves CLIP's performance on the challenging MMVP-VLM benchmark which assesses fine-grained visual abilities to a large extent (e.g., 3-7%), and enhances the performance of MLLMs and vision models on multimodal understanding and segmentation tasks. Extensive evaluation on 29 image classification and retrieval benchmarks confirms that our framework preserves CLIP's strong zero-shot capabilities. The code will be available at https://github.com/baaivision/DIVA.",
-    "link": "https://arxiv.org/abs/2407.20171",
-    "published": "Tue, 30 Jul 2024 02:01:11 GMT",
-    "authors": "Wenxuan Wang, Quan Sun, Fan Zhang, Yepeng Tang, Jing Liu, Xinlong Wang",
+    "title": "Unleashing the Power of Data Tsunami: A Comprehensive Survey on Data Assessment and Selection for Instruction Tuning of Language Models",
+    "summary": "Instruction tuning plays a critical role in aligning large language models (LLMs) with human preference. Despite the vast amount of open instruction datasets, naively training a LLM on all existing instructions may not be optimal and practical. To pinpoint the most beneficial datapoints, data assessment and selection methods have been proposed in the fields of natural language processing (NLP) and deep learning. However, under the context of instruction tuning, there still exists a gap in knowledge on what kind of data evaluation metrics can be employed and how they can be integrated into the selection mechanism. To bridge this gap, we present a comprehensive review on existing literature of data assessment and selection especially for instruction tuning of LLMs. We systematically categorize all applicable methods into quality-based, diversity-based, and importance-based ones where a unified, fine-grained taxonomy is structured. For each category, representative methods are elaborated to describe the landscape of relevant research. In addition, comparison between latest methods is conducted on their officially reported results to provide in-depth discussions on their limitations. Finally, we summarize the open challenges and propose the promosing avenues for future studies. All related contents are available at https://github.com/yuleiqin/fantastic-data-engineering.",
+    "link": "https://arxiv.org/abs/2408.02085",
+    "published": "Tue, 06 Aug 2024 02:51:07 GMT",
+    "authors": "Yulei Qin, Yuncheng Yang, Pengcheng Guo, Gang Li, Hang Shao, Yuchen Shi, Zihan Xu, Yun Gu, Ke Li, Xing Sun",
     "github_urls": [
-      "https://github.com/baaivision/DIVA."
+      "https://github.com/yuleiqin/fantastic-data-engineering."
     ],
     "huggingface_urls": [],
     "source": "Hugging Face"
   },
   {
-    "title": "Bridging the Gap: Studio-like Avatar Creation from a Monocular Phone Capture",
-    "summary": "Creating photorealistic avatars for individuals traditionally involves extensive capture sessions with complex and expensive studio devices like the LightStage system. While recent strides in neural representations have enabled the generation of photorealistic and animatable 3D avatars from quick phone scans, they have the capture-time lighting baked-in, lack facial details and have missing regions in areas such as the back of the ears. Thus, they lag in quality compared to studio-captured avatars. In this paper, we propose a method that bridges this gap by generating studio-like illuminated texture maps from short, monocular phone captures. We do this by parameterizing the phone texture maps using the W^+ space of a StyleGAN2, enabling near-perfect reconstruction. Then, we finetune a StyleGAN2 by sampling in the W^+ parameterized space using a very small set of studio-captured textures as an adversarial training signal. To further enhance the realism and accuracy of facial details, we super-resolve the output of the StyleGAN2 using carefully designed diffusion model that is guided by image gradients of the phone-captured texture map. Once trained, our method excels at producing studio-like facial texture maps from casual monocular smartphone videos. Demonstrating its capabilities, we showcase the generation of photorealistic, uniformly lit, complete avatars from monocular phone captures. http://shahrukhathar.github.io/2024/07/22/Bridging.html{The project page can be found here.}",
-    "link": "https://arxiv.org/abs/2407.19593",
-    "published": "Tue, 30 Jul 2024 01:55:52 GMT",
-    "authors": "ShahRukh Athar, Shunsuke Saito, Zhengyu Yang, Stanislav Pidhorsky, Chen Cao",
+    "title": "MiniCPM-V: A GPT-4V Level MLLM on Your Phone",
+    "summary": "The recent surge of Multimodal Large Language Models (MLLMs) has fundamentally reshaped the landscape of AI research and industry, shedding light on a promising path toward the next AI milestone. However, significant challenges remain preventing MLLMs from being practical in real-world applications. The most notable challenge comes from the huge cost of running an MLLM with a massive number of parameters and extensive computation. As a result, most MLLMs need to be deployed on high-performing cloud servers, which greatly limits their application scopes such as mobile, offline, energy-sensitive, and privacy-protective scenarios. In this work, we present MiniCPM-V, a series of efficient MLLMs deployable on end-side devices. By integrating the latest MLLM techniques in architecture, pretraining and alignment, the latest MiniCPM-Llama3-V 2.5 has several notable features: (1) Strong performance, outperforming GPT-4V-1106, Gemini Pro and Claude 3 on OpenCompass, a comprehensive evaluation over 11 popular benchmarks, (2) strong OCR capability and 1.8M pixel high-resolution image perception at any aspect ratio, (3) trustworthy behavior with low hallucination rates, (4) multilingual support for 30+ languages, and (5) efficient deployment on mobile phones. More importantly, MiniCPM-V can be viewed as a representative example of a promising trend: The model sizes for achieving usable (e.g., GPT-4V) level performance are rapidly decreasing, along with the fast growth of end-side computation capacity. This jointly shows that GPT-4V level MLLMs deployed on end devices are becoming increasingly possible, unlocking a wider spectrum of real-world AI applications in the near future.",
+    "link": "https://arxiv.org/abs/2408.01800",
+    "published": "Tue, 06 Aug 2024 02:41:59 GMT",
+    "authors": "Yuan Yao, Tianyu Yu, Ao Zhang, Chongyi Wang, Junbo Cui, Hongji Zhu, Tianchi Cai, Haoyu Li, Weilin Zhao, Zhihui He, Qianyu Chen, Huarong Zhou, Zhensheng Zou, Haoye Zhang, Shengding Hu, Zhi Zheng, Jie Zhou, Jie Cai, Xu Han, Guoyang Zeng, Dahai Li, Zhiyuan Liu, Maosong Sun",
     "github_urls": [],
     "huggingface_urls": [],
     "source": "Hugging Face"
   },
   {
-    "title": "Theia: Distilling Diverse Vision Foundation Models for Robot Learning",
-    "summary": "Vision-based robot policy learning, which maps visual inputs to actions, necessitates a holistic understanding of diverse visual tasks beyond single-task needs like classification or segmentation. Inspired by this, we introduce Theia, a vision foundation model for robot learning that distills multiple off-the-shelf vision foundation models trained on varied vision tasks. Theia's rich visual representations encode diverse visual knowledge, enhancing downstream robot learning. Extensive experiments demonstrate that Theia outperforms its teacher models and prior robot learning models using less training data and smaller model sizes. Additionally, we quantify the quality of pre-trained visual representations and hypothesize that higher entropy in feature norm distributions leads to improved robot learning performance. Code and models are available at https://github.com/bdaiinstitute/theia.",
-    "link": "https://arxiv.org/abs/2407.20179",
-    "published": "Tue, 30 Jul 2024 01:55:27 GMT",
-    "authors": "Jinghuan Shang, Karl Schmeckpeper, Brandon B. May, Maria Vittoria Minniti, Tarik Kelestemur, David Watkins, Laura Herlant",
+    "title": "Lumina-mGPT: Illuminate Flexible Photorealistic Text-to-Image Generation with Multimodal Generative Pretraining",
+    "summary": "We present Lumina-mGPT, a family of multimodal autoregressive models capable of various vision and language tasks, particularly excelling in generating flexible photorealistic images from text descriptions. Unlike existing autoregressive image generation approaches, Lumina-mGPT employs a pretrained decoder-only transformer as a unified framework for modeling multimodal token sequences. Our key insight is that a simple decoder-only transformer with multimodal Generative PreTraining (mGPT), utilizing the next-token prediction objective on massive interleaved text-image sequences, can learn broad and general multimodal capabilities, thereby illuminating photorealistic text-to-image generation. Building on these pretrained models, we propose Flexible Progressive Supervised Finetuning (FP-SFT) on high-quality image-text pairs to fully unlock their potential for high-aesthetic image synthesis at any resolution while maintaining their general multimodal capabilities. Furthermore, we introduce Ominiponent Supervised Finetuning (Omni-SFT), transforming Lumina-mGPT into a foundation model that seamlessly achieves omnipotent task unification. The resulting model demonstrates versatile multimodal capabilities, including visual generation tasks like flexible text-to-image generation and controllable generation, visual recognition tasks like segmentation and depth estimation, and vision-language tasks like multiturn visual question answering. Additionally, we analyze the differences and similarities between diffusion-based and autoregressive methods in a direct comparison.",
+    "link": "https://arxiv.org/abs/2408.02657",
+    "published": "Tue, 06 Aug 2024 02:10:27 GMT",
+    "authors": "Dongyang Liu, Shitian Zhao, Le Zhuo, Weifeng Lin, Yu Qiao, Hongsheng Li, Peng Gao",
+    "github_urls": [],
+    "huggingface_urls": [],
+    "source": "Hugging Face"
+  },
+  {
+    "title": "VidGen-1M: A Large-Scale Dataset for Text-to-video Generation",
+    "summary": "The quality of video-text pairs fundamentally determines the upper bound of text-to-video models. Currently, the datasets used for training these models suffer from significant shortcomings, including low temporal consistency, poor-quality captions, substandard video quality, and imbalanced data distribution. The prevailing video curation process, which depends on image models for tagging and manual rule-based curation, leads to a high computational load and leaves behind unclean data. As a result, there is a lack of appropriate training datasets for text-to-video models. To address this problem, we present VidGen-1M, a superior training dataset for text-to-video models. Produced through a coarse-to-fine curation strategy, this dataset guarantees high-quality videos and detailed captions with excellent temporal consistency. When used to train the video generation model, this dataset has led to experimental results that surpass those obtained with other models.",
+    "link": "https://arxiv.org/abs/2408.02629",
+    "published": "Tue, 06 Aug 2024 02:02:31 GMT",
+    "authors": "Zhiyu Tan, Xiaomeng Yang, Luozheng Qin, Hao Li",
+    "github_urls": [],
+    "huggingface_urls": [],
+    "source": "Hugging Face"
+  },
+  {
+    "title": "Language Model Can Listen While Speaking",
+    "summary": "Dialogue serves as the most natural manner of human-computer interaction (HCI). Recent advancements in speech language models (SLM) have significantly enhanced speech-based conversational AI. However, these models are limited to turn-based conversation, lacking the ability to interact with humans in real-time spoken scenarios, for example, being interrupted when the generated content is not satisfactory. To address these limitations, we explore full duplex modeling (FDM) in interactive speech language models (iSLM), focusing on enhancing real-time interaction and, more explicitly, exploring the quintessential ability of interruption. We introduce a novel model design, namely listening-while-speaking language model (LSLM), an end-to-end system equipped with both listening and speaking channels. Our LSLM employs a token-based decoder-only TTS for speech generation and a streaming self-supervised learning (SSL) encoder for real-time audio input. LSLM fuses both channels for autoregressive generation and detects turn-taking in real time. Three fusion strategies -- early fusion, middle fusion, and late fusion -- are explored, with middle fusion achieving an optimal balance between speech generation and real-time interaction. Two experimental settings, command-based FDM and voice-based FDM, demonstrate LSLM's robustness to noise and sensitivity to diverse instructions. Our results highlight LSLM's capability to achieve duplex communication with minimal impact on existing systems. This study aims to advance the development of interactive speech dialogue systems, enhancing their applicability in real-world contexts.",
+    "link": "https://arxiv.org/abs/2408.02622",
+    "published": "Tue, 06 Aug 2024 01:54:48 GMT",
+    "authors": "Ziyang Ma, Yakun Song, Chenpeng Du, Jian Cong, Zhuo Chen, Yuping Wang, Yuxuan Wang, Xie Chen",
+    "github_urls": [],
+    "huggingface_urls": [],
+    "source": "Hugging Face"
+  },
+  {
+    "title": "ProCreate, Dont Reproduce! Propulsive Energy Diffusion for Creative Generation",
+    "summary": "In this paper, we propose ProCreate, a simple and easy-to-implement method to improve sample diversity and creativity of diffusion-based image generative models and to prevent training data reproduction. ProCreate operates on a set of reference images and actively propels the generated image embedding away from the reference embeddings during the generation process. We propose FSCG-8 (Few-Shot Creative Generation 8), a few-shot creative generation dataset on eight different categories -- encompassing different concepts, styles, and settings -- in which ProCreate achieves the highest sample diversity and fidelity. Furthermore, we show that ProCreate is effective at preventing replicating training data in a large-scale evaluation using training text prompts. Code and FSCG-8 are available at https://github.com/Agentic-Learning-AI-Lab/procreate-diffusion-public. The project page is available at https://procreate-diffusion.github.io.",
+    "link": "https://arxiv.org/abs/2408.02226",
+    "published": "Tue, 06 Aug 2024 01:50:27 GMT",
+    "authors": "Jack Lu, Ryan Teehan, Mengye Ren",
     "github_urls": [
-      "https://github.com/bdaiinstitute/theia."
+      "https://github.com/Agentic-Learning-AI-Lab/procreate-diffusion-public."
     ],
     "huggingface_urls": [],
     "source": "Hugging Face"
   },
   {
-    "title": "Cycle3D: High-quality and Consistent Image-to-3D Generation via Generation-Reconstruction Cycle",
-    "summary": "Recent 3D large reconstruction models typically employ a two-stage process, including first generate multi-view images by a multi-view diffusion model, and then utilize a feed-forward model to reconstruct images to 3D content.However, multi-view diffusion models often produce low-quality and inconsistent images, adversely affecting the quality of the final 3D reconstruction. To address this issue, we propose a unified 3D generation framework called Cycle3D, which cyclically utilizes a 2D diffusion-based generation module and a feed-forward 3D reconstruction module during the multi-step diffusion process. Concretely, 2D diffusion model is applied for generating high-quality texture, and the reconstruction model guarantees multi-view consistency.Moreover, 2D diffusion model can further control the generated content and inject reference-view information for unseen views, thereby enhancing the diversity and texture consistency of 3D generation during the denoising process. Extensive experiments demonstrate the superior ability of our method to create 3D content with high-quality and consistency compared with state-of-the-art baselines.",
-    "link": "https://arxiv.org/abs/2407.19548",
-    "published": "Tue, 30 Jul 2024 01:51:59 GMT",
-    "authors": "Zhenyu Tang, Junwu Zhang, Xinhua Cheng, Wangbo Yu, Chaoran Feng, Yatian Pang, Bin Lin, Li Yuan",
-    "github_urls": [],
-    "huggingface_urls": [],
-    "source": "Hugging Face"
-  },
-  {
-    "title": "VolDoGer: LLM-assisted Datasets for Domain Generalization in Vision-Language Tasks",
-    "summary": "Domain generalizability is a crucial aspect of a deep learning model since it determines the capability of the model to perform well on data from unseen domains. However, research on the domain generalizability of deep learning models for vision-language tasks remains limited, primarily because of the lack of required datasets. To address these challenges, we propose VolDoGer: Vision-Language Dataset for Domain Generalization, a dedicated dataset designed for domain generalization that addresses three vision-language tasks: image captioning, visual question answering, and visual entailment. We constructed VolDoGer by extending LLM-based data annotation techniques to vision-language tasks, thereby alleviating the burden of recruiting human annotators. We evaluated the domain generalizability of various models, ranging from fine-tuned models to a recent multimodal large language model, through VolDoGer.",
-    "link": "https://arxiv.org/abs/2407.19795",
-    "published": "Tue, 30 Jul 2024 01:26:31 GMT",
-    "authors": "Juhwan Choi, Junehyoung Kwon, JungMin Yun, Seunguk Yu, YoungBin Kim",
-    "github_urls": [],
-    "huggingface_urls": [],
-    "source": "Hugging Face"
-  },
-  {
-    "title": "Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models",
-    "summary": "Imagine observing someone scratching their arm; to understand why, additional context would be necessary. However, spotting a mosquito nearby would immediately offer a likely explanation for the person's discomfort, thereby alleviating the need for further information. This example illustrates how subtle visual cues can challenge our cognitive skills and demonstrates the complexity of interpreting visual scenarios. To study these skills, we present Visual Riddles, a benchmark aimed to test vision and language models on visual riddles requiring commonsense and world knowledge. The benchmark comprises 400 visual riddles, each featuring a unique image created by a variety of text-to-image models, question, ground-truth answer, textual hint, and attribution. Human evaluation reveals that existing models lag significantly behind human performance, which is at 82\\% accuracy, with Gemini-Pro-1.5 leading with 40\\% accuracy. Our benchmark comes with automatic evaluation tasks to make assessment scalable. These findings underscore the potential of Visual Riddles as a valuable resource for enhancing vision and language models' capabilities in interpreting complex visual scenarios.",
-    "link": "https://arxiv.org/abs/2407.19474",
-    "published": "Tue, 30 Jul 2024 01:19:55 GMT",
-    "authors": "Nitzan Bitton-Guetta, Aviv Slobodkin, Aviya Maimon, Eliya Habba, Royi Rassin, Yonatan Bitton, Idan Szpektor, Amir Globerson, Yuval Elovici",
-    "github_urls": [],
-    "huggingface_urls": [],
-    "source": "Hugging Face"
-  },
-  {
-    "title": "MMAU: A Holistic Benchmark of Agent Capabilities Across Diverse Domains",
-    "summary": "Recent advances in large language models (LLMs) have increased the demand for comprehensive benchmarks to evaluate their capabilities as human-like agents. Existing benchmarks, while useful, often focus on specific application scenarios, emphasizing task completion but failing to dissect the underlying skills that drive these outcomes. This lack of granularity makes it difficult to deeply discern where failures stem from. Additionally, setting up these environments requires considerable effort, and issues of unreliability and reproducibility sometimes arise, especially in interactive tasks. To address these limitations, we introduce the Massive Multitask Agent Understanding (MMAU) benchmark, featuring comprehensive offline tasks that eliminate the need for complex environment setups. It evaluates models across five domains, including teal{Tool-use}, teal{Directed Acyclic Graph (DAG) QA}, teal{Data Science and Machine Learning coding}, teal{Contest-level programming} and teal{Mathematics}, and covers five essential capabilities: orange{Understanding}, orange{Reasoning}, orange{Planning}, orange{Problem-solving}, and orange{Self-correction}. With a total of 20 meticulously designed tasks encompassing over 3K distinct prompts, MMAU provides a comprehensive framework for evaluating the strengths and limitations of LLM agents. By testing 18 representative models on MMAU, we provide deep and insightful analyses. Ultimately, MMAU not only sheds light on the capabilities and limitations of LLM agents but also enhances the interpretability of their performance. Datasets and evaluation scripts of MMAU are released at https://github.com/apple/axlearn/docs/research/mmau.",
-    "link": "https://arxiv.org/abs/2407.18961",
-    "published": "Tue, 30 Jul 2024 01:08:30 GMT",
-    "authors": "Guoli Yin, Haoping Bai, Shuang Ma, Feng Nan, Yanchao Sun, Zhaoyang Xu, Shen Ma, Jiarui Lu, Xiang Kong, Aonan Zhang, Dian Ang Yap, Yizhe zhang, Karsten Ahnert, Vik Kamath, Mathias Berglund, Dominic Walsh, Tobias Gindele, Juergen Wiest, Zhengfeng Lai, Xiaoming Wang, Jiulong Shan, Meng Cao, Ruoming Pang, Zirui Wang",
+    "title": "GPUDrive: Data-driven, multi-agent driving simulation at 1 million FPS",
+    "summary": "Multi-agent learning algorithms have been successful at generating superhuman planning in a wide variety of games but have had little impact on the design of deployed multi-agent planners. A key bottleneck in applying these techniques to multi-agent planning is that they require billions of steps of experience. To enable the study of multi-agent planning at this scale, we present GPUDrive, a GPU-accelerated, multi-agent simulator built on top of the Madrona Game Engine that can generate over a million steps of experience per second. Observation, reward, and dynamics functions are written directly in C++, allowing users to define complex, heterogeneous agent behaviors that are lowered to high-performance CUDA. We show that using GPUDrive we are able to effectively train reinforcement learning agents over many scenes in the Waymo Motion dataset, yielding highly effective goal-reaching agents in minutes for individual scenes and generally capable agents in a few hours. We ship these trained agents as part of the code base at https://github.com/Emerge-Lab/gpudrive.",
+    "link": "https://arxiv.org/abs/2408.01584",
+    "published": "Tue, 06 Aug 2024 01:39:54 GMT",
+    "authors": "Saman Kazemkhani, Aarav Pandya, Daphne Cornelisse, Brennan Shacklett, Eugene Vinitsky",
     "github_urls": [
-      "https://github.com/apple/axlearn/docs/research/mmau."
+      "https://github.com/Emerge-Lab/gpudrive."
     ],
     "huggingface_urls": [],
     "source": "Hugging Face"
   },
   {
-    "title": "WalkTheDog: Cross-Morphology Motion Alignment via Phase Manifolds",
-    "summary": "We present a new approach for understanding the periodicity structure and semantics of motion datasets, independently of the morphology and skeletal structure of characters. Unlike existing methods using an overly sparse high-dimensional latent, we propose a phase manifold consisting of multiple closed curves, each corresponding to a latent amplitude. With our proposed vector quantized periodic autoencoder, we learn a shared phase manifold for multiple characters, such as a human and a dog, without any supervision. This is achieved by exploiting the discrete structure and a shallow network as bottlenecks, such that semantically similar motions are clustered into the same curve of the manifold, and the motions within the same component are aligned temporally by the phase variable. In combination with an improved motion matching framework, we demonstrate the manifold's capability of timing and semantics alignment in several applications, including motion retrieval, transfer and stylization. Code and pre-trained models for this paper are available at https://peizhuoli.github.io/walkthedog.",
-    "link": "https://arxiv.org/abs/2407.18946",
-    "published": "Tue, 30 Jul 2024 01:04:29 GMT",
-    "authors": "Peizhuo Li, Sebastian Starke, Yuting Ye, Olga Sorkine-Hornung",
+    "title": "MeshAnything V2: Artist-Created Mesh Generation With Adjacent Mesh Tokenization",
+    "summary": "We introduce MeshAnything V2, an autoregressive transformer that generates Artist-Created Meshes (AM) aligned to given shapes. It can be integrated with various 3D asset production pipelines to achieve high-quality, highly controllable AM generation. MeshAnything V2 surpasses previous methods in both efficiency and performance using models of the same size. These improvements are due to our newly proposed mesh tokenization method: Adjacent Mesh Tokenization (AMT). Different from previous methods that represent each face with three vertices, AMT uses a single vertex whenever possible. Compared to previous methods, AMT requires about half the token sequence length to represent the same mesh in average. Furthermore, the token sequences from AMT are more compact and well-structured, fundamentally benefiting AM generation. Our extensive experiments show that AMT significantly improves the efficiency and performance of AM generation. Project Page: https://buaacyw.github.io/meshanything-v2/",
+    "link": "https://arxiv.org/abs/2408.02555",
+    "published": "Tue, 06 Aug 2024 01:36:09 GMT",
+    "authors": "Yiwen Chen, Yikai Wang, Yihao Luo, Zhengyi Wang, Zilong Chen, Jun Zhu, Chi Zhang, Guosheng Lin",
     "github_urls": [],
     "huggingface_urls": [],
     "source": "Hugging Face"
   },
   {
-    "title": "FreeLong: Training-Free Long Video Generation with SpectralBlend Temporal Attention",
-    "summary": "Video diffusion models have made substantial progress in various video generation applications. However, training models for long video generation tasks require significant computational and data resources, posing a challenge to developing long video diffusion models. This paper investigates a straightforward and training-free approach to extend an existing short video diffusion model (e.g. pre-trained on 16-frame videos) for consistent long video generation (e.g. 128 frames). Our preliminary observation has found that directly applying the short video diffusion model to generate long videos can lead to severe video quality degradation. Further investigation reveals that this degradation is primarily due to the distortion of high-frequency components in long videos, characterized by a decrease in spatial high-frequency components and an increase in temporal high-frequency components. Motivated by this, we propose a novel solution named FreeLong to balance the frequency distribution of long video features during the denoising process. FreeLong blends the low-frequency components of global video features, which encapsulate the entire video sequence, with the high-frequency components of local video features that focus on shorter subsequences of frames. This approach maintains global consistency while incorporating diverse and high-quality spatiotemporal details from local videos, enhancing both the consistency and fidelity of long video generation. We evaluated FreeLong on multiple base video diffusion models and observed significant improvements. Additionally, our method supports coherent multi-prompt generation, ensuring both visual coherence and seamless transitions between scenes.",
-    "link": "https://arxiv.org/abs/2407.19918",
-    "published": "Tue, 30 Jul 2024 01:02:24 GMT",
-    "authors": "Yu Lu, Yuanzhi Liang, Linchao Zhu, Yi Yang",
-    "github_urls": [],
-    "huggingface_urls": [],
-    "source": "Hugging Face"
-  },
-  {
-    "title": "Self-Training with Direct Preference Optimization Improves Chain-of-Thought Reasoning",
-    "summary": "Effective training of language models (LMs) for mathematical reasoning tasks demands high-quality supervised fine-tuning data. Besides obtaining annotations from human experts, a common alternative is sampling from larger and more powerful LMs. However, this knowledge distillation approach can be costly and unstable, particularly when relying on closed-source, proprietary LMs like GPT-4, whose behaviors are often unpredictable. In this work, we demonstrate that the reasoning abilities of small-scale LMs can be enhanced through self-training, a process where models learn from their own outputs. We also show that the conventional self-training can be further augmented by a preference learning algorithm called Direct Preference Optimization (DPO). By integrating DPO into self-training, we leverage preference data to guide LMs towards more accurate and diverse chain-of-thought reasoning. We evaluate our method across various mathematical reasoning tasks using different base models. Our experiments show that this approach not only improves LMs' reasoning performance but also offers a more cost-effective and scalable solution compared to relying on large proprietary LMs.",
-    "link": "https://arxiv.org/abs/2407.18248",
-    "published": "Tue, 30 Jul 2024 00:48:49 GMT",
-    "authors": "Tianduo Wang, Shichen Li, Wei Lu",
-    "github_urls": [],
-    "huggingface_urls": [],
-    "source": "Hugging Face"
-  },
-  {
-    "title": "3D Question Answering for City Scene Understanding",
-    "summary": "3D multimodal question answering (MQA) plays a crucial role in scene understanding by enabling intelligent agents to comprehend their surroundings in 3D environments. While existing research has primarily focused on indoor household tasks and outdoor roadside autonomous driving tasks, there has been limited exploration of city-level scene understanding tasks. Furthermore, existing research faces challenges in understanding city scenes, due to the absence of spatial semantic information and human-environment interaction information at the city level.To address these challenges, we investigate 3D MQA from both dataset and method perspectives. From the dataset perspective, we introduce a novel 3D MQA dataset named City-3DQA for city-level scene understanding, which is the first dataset to incorporate scene semantic and human-environment interactive tasks within the city. From the method perspective, we propose a Scene graph enhanced City-level Understanding method (Sg-CityU), which utilizes the scene graph to introduce the spatial semantic. A new benchmark is reported and our proposed Sg-CityU achieves accuracy of 63.94 % and 63.76 % in different settings of City-3DQA. Compared to indoor 3D MQA methods and zero-shot using advanced large language models (LLMs), Sg-CityU demonstrates state-of-the-art (SOTA) performance in robustness and generalization.",
-    "link": "https://arxiv.org/abs/2407.17398",
-    "published": "Tue, 30 Jul 2024 00:27:33 GMT",
-    "authors": "Penglei Sun, Yaoxian Song, Xiang Liu, Xiaofei Yang, Qiang Wang, Tiefeng Li, Yang Yang, Xiaowen Chu",
-    "github_urls": [],
-    "huggingface_urls": [],
-    "source": "Hugging Face"
-  },
-  {
-    "title": "SaulLM-54B & SaulLM-141B: Scaling Up Domain Adaptation for the Legal Domain",
-    "summary": "In this paper, we introduce SaulLM-54B and SaulLM-141B, two large language models (LLMs) tailored for the legal sector. These models, which feature architectures of 54 billion and 141 billion parameters, respectively, are based on the Mixtral architecture. The development of SaulLM-54B and SaulLM-141B is guided by large-scale domain adaptation, divided into three strategies: (1) the exploitation of continued pretraining involving a base corpus that includes over 540 billion of legal tokens, (2) the implementation of a specialized legal instruction-following protocol, and (3) the alignment of model outputs with human preferences in legal interpretations. The integration of synthetically generated data in the second and third steps enhances the models' capabilities in interpreting and processing legal texts, effectively reaching state-of-the-art performance and outperforming previous open-source models on LegalBench-Instruct. This work explores the trade-offs involved in domain-specific adaptation at this scale, offering insights that may inform future studies on domain adaptation using strong decoder models. Building upon SaulLM-7B, this study refines the approach to produce an LLM better equipped for legal tasks. We are releasing base, instruct, and aligned versions on top of SaulLM-54B and SaulLM-141B under the MIT License to facilitate reuse and collaborative research.",
-    "link": "https://arxiv.org/abs/2407.19584",
-    "published": "Tue, 30 Jul 2024 00:06:44 GMT",
-    "authors": "Pierre Colombo, Telmo Pires, Malik Boudiaf, Rui Melo, Dominic Culver, Sofia Morgado, Etienne Malaboeuf, Gabriel Hautreux, Johanne Charpentier, Michael Desa",
+    "title": "Self-Taught Evaluators",
+    "summary": "Model-based evaluation is at the heart of successful model development -- as a reward model for training, and as a replacement for human evaluation. To train such evaluators, the standard approach is to collect a large amount of human preference judgments over model responses, which is costly and the data becomes stale as models improve. In this work, we present an approach that aims to im-prove evaluators without human annotations, using synthetic training data only. Starting from unlabeled instructions, our iterative self-improvement scheme generates contrasting model outputs and trains an LLM-as-a-Judge to produce reasoning traces and final judgments, repeating this training at each new iteration using the improved predictions. Without any labeled preference data, our Self-Taught Evaluator can improve a strong LLM (Llama3-70B-Instruct) from 75.4 to 88.3 (88.7 with majority vote) on RewardBench. This outperforms commonly used LLM judges such as GPT-4 and matches the performance of the top-performing reward models trained with labeled examples.",
+    "link": "https://arxiv.org/abs/2408.02666",
+    "published": "Tue, 06 Aug 2024 01:10:27 GMT",
+    "authors": "Tianlu Wang, Ilia Kulikov, Olga Golovneva, Ping Yu, Weizhe Yuan, Jane Dwivedi-Yu, Richard Yuanzhe Pang, Maryam Fazel-Zarandi, Jason Weston, Xian Li",
     "github_urls": [],
     "huggingface_urls": [],
     "source": "Hugging Face"
