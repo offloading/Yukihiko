@@ -21,7 +21,7 @@ class IssueCreator:
         self.repo = self.g.get_repo(os.environ['GITHUB_REPOSITORY'])
         self.llm_service = LLMService()
 
-    def translate_text(self, text: str, target_language: str = "日本語", max_retries: int = 50) -> Optional[str]:
+    def translate_text(self, text: str, target_language: str = "日本語", max_retries: int = 5) -> Optional[str]:
         logger.info(f"テキストを{target_language}に翻訳中...")
         prompt = f"""
 以下のテキストを自然な{target_language}に翻訳してください。翻訳結果のみをください：
@@ -85,7 +85,7 @@ class IssueCreator:
         logger.success(f"{len(papers)}件の論文データを読み込みました")
 
         debug_start = 0
-        n = 5
+        n = 50
         for i, paper in enumerate(papers[debug_start:debug_start+n], 1):
             logger.info(f"論文 {i}/{n} を処理中...")
             self.create_issue(paper)
